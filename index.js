@@ -31,7 +31,6 @@
 
 // ------Factory Function-------
 
-
 // !!!!!!Constructor Function!!!!!!
 
 // function Circle(radius){
@@ -51,3 +50,17 @@
 // new String(); // '', "", ``
 // new Boolean(); // true, false, null, undefined
 // new Number(); // 1,2,3
+
+function Circle(radius) {
+  // console.log('this: ', this); THIS
+  this.radius = radius;
+  this.draw = function () {
+    console.log("draw");
+  };
+}
+
+Circle.call({}, 1);
+Circle.apply({}, [1]);
+
+
+// const another = new Circle(1);
