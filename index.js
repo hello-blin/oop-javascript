@@ -34,15 +34,20 @@
 
 // !!!!!!Constructor Function!!!!!!
 
-function Circle(radius){
-    console.log('this: ', this);
-    this.radius = radius;
-    this.draw = function(){
-        console.log('draw')
-    }
-}
+// function Circle(radius){
+//     // console.log('this: ', this); THIS
+//     this.radius = radius;
+//     this.draw = function(){
+//         console.log('draw')
+//     }
+// }
 
-const another = new Circle(1);
-console.log(another);
+// const another = Circle(1);
+// console.log(another);
 
 // !!!!!!Constructor Function!!!!!!
+
+// Some of Built in Constructors
+// new String(); // '', "", ``
+// new Boolean(); // true, false, null, undefined
+// new Number(); // 1,2,3
