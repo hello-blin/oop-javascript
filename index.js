@@ -35,6 +35,7 @@
 // !!!!!!Constructor Function!!!!!!
 
 function Circle(radius){
+    console.log('this: ', this);
     this.radius = radius;
     this.draw = function(){
         console.log('draw')
@@ -42,5 +43,6 @@ function Circle(radius){
 }
 
 const another = new Circle(1);
+console.log(another);
 
 // !!!!!!Constructor Function!!!!!!
