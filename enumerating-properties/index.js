@@ -15,5 +15,6 @@ inside and we can produce or show the value
 through this rule.
 */
 for (let key in circle) {
-  console.log(key, circle[key]);
+  if (typeof circle[key] !== "function") console.log(key, circle[key]);
 }
+Object.keys(circle); //Another method of getting all keys in an object
