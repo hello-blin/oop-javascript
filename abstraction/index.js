@@ -1,14 +1,13 @@
 function Circle(radius) {
   this.radius = radius;
 
-  this.defaultLocation = {x: 0, y: 0};
-  this.computeOptimumLocation = function(){
-
-  };
+  let defaultLocation = { x: 0, y: 0 };
+  let computeOptimumLocation = function (factor) {};
+  
   this.draw = function () {
-      this.
+    this.computeOptimumLocation();
     console.log("Drawo");
   };
 }
 
-let circle = new Circle(10)
+let circle = new Circle(10);
