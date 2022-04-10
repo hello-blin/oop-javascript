@@ -18,3 +18,5 @@ for (let key in circle) {
   if (typeof circle[key] !== "function") console.log(key, circle[key]);
 }
 Object.keys(circle); //Another method of getting all keys in an object
+
+if ("radius" in circle) console.log("Circle has a radius");
